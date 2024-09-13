@@ -49,3 +49,33 @@
   z-index: 2;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #fff;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(229, 174, 73);
+  opacity: 1;
+  transition: all 400ms;
+}
+
+.btn:hover {
+  background-color: rgb(229, 174, 73);
+  opacity: 0.7;
+  cursor: pointer;
+}
+.icon-hover:hover {
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.image_demo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}

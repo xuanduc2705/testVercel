@@ -8,9 +8,10 @@ import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionThree";
 function App() {
   return (
-    <div>
+    <div className="">
       <Banner />
       <SectionOne />
+      <SectionTwo />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import anh from "./images/slide01.png";
-import logo from "./images/logo.png";
+// import anh from "./images/slide01.png";
+import anh from "./images/banner2.png";
 import "./App.css";
 import { Button } from "@mui/material";
 
@@ -65,9 +65,9 @@ const Banner = () => {
             </span>
           </p>
           <button
-            className="px-6 py-3 text-lg font-bold"
+            className="px-6 py-3 text-lg font-bold btn"
             style={{
-              backgroundColor: "rgb(229, 174, 73)",
+              // backgroundColor: "rgb(229, 174, 73)",
               color: "white",
               borderRadius: "30px",
               border: "none",
