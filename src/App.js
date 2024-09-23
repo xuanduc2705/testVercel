@@ -11,7 +11,7 @@ function App() {
     <div className="">
       <Banner />
       <SectionOne />
-      <SectionTwo />
+      {/* <SectionTwo /> */}
     </div>
   );
 }
