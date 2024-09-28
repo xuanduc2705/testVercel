@@ -18,10 +18,19 @@ import mem2 from "./images/mem4.png";
 import mem1 from "./images/mem1.png";
 import mem3 from "./images/mem3.png";
 import mem5 from "./images/mem5.png";
-import tai1 from "./images/tai1.png";
+import lg from "./images/lgo_banner.png";
 import tai2 from "./images/tai2.png";
 import tai3 from "./images/tai3.png";
 import tai4 from "./images/tai4.png";
+import insta from "./images/insta.png";
+import fb from "./images/facebook.png";
+import pin from "./images/pnterest.png";
+import threads from "./images/threads.png";
+import logotext from "./images/ava.png";
+import { PiThreadsLogoFill } from "react-icons/pi";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaPinterest } from "react-icons/fa";
 
 import "./App.css";
 import CircularDemo from "./Carousel";
@@ -625,42 +634,91 @@ const SectionOne = () => {
           <div
             className="w-full flex flex-column"
             style={{
-              height: "500px",
-              backgroundColor: "white",
+              height: "400px",
+              backgroundColor: "#242424",
             }}
           >
-            <div
-              style={{
-                backgroundColor: "white",
-                display: "flex",
-                justifyContent: "center", // Căn giữa theo chiều ngang
-                alignItems: "center",
-              }}
-            >
-              <div
-                className="w-3 mx-auto "
-                style={{
-                  borderTop: "4px solid rgb(229, 174, 73)",
-                  borderRight: "4px solid rgb(229, 174, 73)",
-                  borderBottom: "4px solid rgb(229, 174, 73)",
-                  borderLeft: "0px !important",
-                }}
-              ></div>
-              <p
-                className="flex justify-content-center mx-auto font-medium text-7xl tieuchi mb-4 w-4"
-                // style={{ fontFamily: "monospace" }}
-              >
-                <span> Liên hệ với ĐCore</span>
-              </p>
-              <div
-                className="w-3 mx-auto  "
-                style={{
-                  borderTop: "4px solid rgb(229, 174, 73)",
-                  borderRight: "4px solid rgb(229, 174, 73)",
-                  borderBottom: "4px solid rgb(229, 174, 73)",
-                  borderLeft: "0px !important",
-                }}
-              ></div>
+            <div className=" w-12 justify-content-center align-item-center flex ">
+              <div className="flex flex-column">
+                <div
+                  className="font-bold text-6xl mx-auto pt-4"
+                  style={{ color: "white" }}
+                >
+                  LIÊN HỆ VỚI ĐCORE
+                </div>
+                <div className="flex flex-row space-x-4 mt-6 justify-content-center align-item-center ">
+                  <div
+                    className="bg-white p-1 mx-3 image_ptr"
+                    onClick={() =>
+                      window.open(
+                        "https://www.facebook.com/profile.php?id=61566175107179",
+                        "_blank"
+                      )
+                    }
+                    style={{
+                      borderRadius: "50%",
+                      aspectRatio: "1",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <FaFacebook style={{ fontSize: "50px" }} />
+                  </div>
+                  <div
+                    className="bg-white p-1 mx-3 image_ptr"
+                    onClick={() =>
+                      window.open(
+                        "https://www.instagram.com/dcore.03/",
+                        "_blank"
+                      )
+                    }
+                    style={{
+                      borderRadius: "50%",
+                      aspectRatio: "1",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <RiInstagramFill style={{ fontSize: "50px" }} />
+                  </div>
+                  <div
+                    className="bg-white p-1 mx-3 image_ptr"
+                    onClick={() =>
+                      window.open(
+                        "https://www.threads.net/@dcore.03?xmt=AQGzNjLnvt1iu44S19BFPfS5KZPSHjy_vywJgDJ9gJIswpY",
+                        "_blank"
+                      )
+                    }
+                    style={{
+                      borderRadius: "50%",
+                      aspectRatio: "1",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <PiThreadsLogoFill style={{ fontSize: "50px" }} />
+                  </div>
+                  <div
+                    className="bg-white p-1 mx-3 image_ptr"
+                    onClick={() =>
+                      window.open(
+                        "https://www.pinterest.com/dcore4tpf/",
+                        "_blank"
+                      )
+                    }
+                    style={{
+                      borderRadius: "50%",
+                      aspectRatio: "1",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <FaPinterest style={{ fontSize: "50px" }} />
+                  </div>
+                </div>
+
+                <img
+                  className="mx-auto m-4"
+                  src={lg}
+                  style={{ width: "150px" }}
+                />
+              </div>
             </div>
             {/* <div className="grid" style={{ backgroundColor: "white" }}>
               <div className="col-4 flex flex-column p-5">

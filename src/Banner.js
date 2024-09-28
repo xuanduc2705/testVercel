@@ -1,5 +1,6 @@
 // import anh from "./images/slide01.png";
 import anh from "./images/banner2.png";
+import logo from "./images/main_logo.png";
 import "./App.css";
 import { Button } from "@mui/material";
 
@@ -42,10 +43,18 @@ const Banner = () => {
         <div className="grid py-4 border-bottom-1">
           <div className="col-2"></div>
           <div className="col-8 flex justify-content-between align-item-center">
-            <span className="text-white font-bold text-4xl">
-              <img></img>ĐCORE
-            </span>
-            <span className="text-white text-xl">Hotline: 0396968327</span>
+            <div
+              className="text-white font-bold text-4xl flex items-center justify-center"
+              // style={{ height: "50" }}
+            >
+              <img src={logo} style={{ height: "60px" }} />
+            </div>
+            <div className="flex flex-column">
+              <span className="text-white text-xl">Hotline: 0396968327</span>
+              <span className="text-white text-xl">
+                Email: dcore4tpf@gmail.com
+              </span>
+            </div>
           </div>
         </div>
         <div
